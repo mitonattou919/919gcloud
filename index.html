@@ -1,0 +1,435 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>919gcloud</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c|Varela+Round" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+        <link href="images/favicon.ico" rel="icon">
+		<link href="assets/css/main.css" rel="stylesheet" />
+	</head>
+	<body class="is-preload">
+
+        <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+        <script src="assets/js/copy.js"></script>
+
+        
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<h1 id="title">919gcloud</h1>
+							<p>Command Line Memo</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+                                <li><a href="#general" id="general-link"><span class="icon solid fa-tools">General</span></a></li>
+                                <li><a href="#compute" id="comute-link"><span class="icon solid fa-server">Compute</span></a></li>
+                                <li><a href="#cloudcontainer" id="cloudcontainer-link"><span class="icon solid fa-dharmachakra">Container</span></a></li>
+                                <li><a href="#kubectl" id="kubectl-link"><span class="icon solid fa-dharmachakra">Kubectl</span></a></li>
+                                <li><a href="#appengine" id="appengine-link"><span class="icon solid fa-cog">App Engine</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="two">
+						<div class="container">
+
+							<header>
+								<h2 class="alt">It's a <strong>Quick GCLOUD</strong> Command Line Memo.</h2>
+								<p>Click or Tap the command-line and it will be copied to your clipboard.</p>
+							</header>
+
+						</div>
+					</section>
+
+                <!-- General -->
+                    <section id="general" class="two">
+                        <div class="container">
+                            <header>
+                                <h2>General</h2>
+                            </header>
+                            
+                            <p>log out from cloud shell<br>
+                            <code class="copy-value" data-clipboard-text="exit">exit</code>
+                            </p>
+
+                            <p>print version
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/version" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud version">gcloud version</code>
+                            </p>
+
+                            <p>lists credentialed account
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/auth/list" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud auth list">gcloud auth list</code>
+                            </p>
+
+
+                            <p>list the roles
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/iam/roles/list" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud iam roles list">gcloud iam roles list</code>
+                            </p>
+
+                            <p>list project's service accounts
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/iam/service-accounts/list" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud iam service-accounts list">gcloud iam service-accounts list</code>
+                            </p>
+
+                            <p>organization / list organizations
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/organizations/list" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud organizations list">gcloud organizations list</code>
+                            </p>
+
+                            <p>list projects
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/projects/list" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud projects list">gcloud projects list</code>
+                            </p>
+
+                            <p>list current project(Cloud SDK property)
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/config/list" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud config list project">gcloud config list project</code>
+                            </p>
+
+
+                            <p>set a project(Cloud SDK property)
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/config/set" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud config set project ">gcloud config set project <span>PROJECT_ID</span></code>
+                            </p>
+
+
+                            <p>list GCE regions
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/compute/regions/list" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud compute regions list">gcloud compute regions list</code>
+                            </p>
+
+
+                            <p>list current region(Cloud SDK property)
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/config/list" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud config list compute/region">gcloud config list compute/region</code>
+                            </p>
+
+
+                            <p>set a region(Cloud SDK property)
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/config/set" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud config set compute/region">gcloud config set compute/region <span>REGION</span></code>
+                            </p>
+
+
+                            <p>list GCE zones
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/compute/zones/list" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud compute zones list">gcloud compute zones list</code>
+                            </p>
+
+
+                            <p>list current zone(Cloud SDK property)
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/config/list" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud config list compute/zone">gcloud config list compute/zone</code>
+                            </p>
+
+                            <p>set a zone(Cloud SDK property)
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/config/set" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud config set compute/zone ">gcloud config set compute/zone <span>ZONE</span></code>
+                            </p>
+
+                            
+                        </div>
+                    </section>
+                
+
+                <!-- Cpmpute -->
+                    <section id="compute" class="two">
+                        <div class="container">
+                            <header>
+                                <h2>Compute</h2>
+                            </header>
+                           
+
+                            <p>list compute engine instances
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/compute/instances/list" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud compute instances list ">gcloud compute instances list</code>
+                            </p>
+
+                            <p>describe compute engine instances
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/compute/instances/list" target="_blank">
+                                <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud compute instances describe ">gcloud compute instances describe <span>INSTANCE_NAME</span></code>
+                            </p>
+
+                            <p><i  class="icon solid fa-spider"></i> start a compute engine instance
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/compute/instances/start" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud compute instances start ">gcloud compute instances start <span>INSTANCE_NAME</span></code>
+                            </p>
+
+                            <p><i  class="icon solid fa-spider"></i> stop a compute engine instance
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/compute/instances/stop" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud compute instances stop ">gcloud compute instances stop <span>INSTANCE_NAME</span></code>
+                            </p>
+
+
+                            <p>SSH into a compute engine instance
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/compute/ssh" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud compute ssh ">gcloud compute ssh <span>INSTANCE_NAME</span></code>
+                            </p>
+
+
+                            <p>copy files to and from compute engine instance via scp
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/compute/scp" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud compute scp ">gcloud compute scp [<span>INSTANCE_NAME</span>:]<span>SOURCE_FILE</span> [<span>INSTANCE_NAME</span>:]<span>DESTINATION_NAME</span></code>
+                            </p>
+
+
+                            <p>list compute engine firewall rules
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/compute/firewall-rules/list" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud compute firewall-rules list">gcloud compute firewall-rules list</code>
+                            </p>
+
+
+                            <p>list compute engine forwarding rules
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/compute/forwarding-rules/list" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud compute forwarding-rules list">gcloud compute forwarding-rules list</code>
+                            </p>
+
+
+                            <p>list compute engine machine types
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/compute/machine-types/list" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud compute machine-types list">gcloud compute machine-types list</code>
+                            </p>
+
+
+                            <p>list compute engine images
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/compute/images/list" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud compute images list">gcloud compute images list</code>
+                            </p>
+
+                            <p>list compute engine templates
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/compute/instance-templates/list" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud compute instance-templates list">gcloud compute instance-templates list</code>
+                            </p>
+
+                            <p>list compute engine instance groups
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/list" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud compute instance-groups list">gcloud compute instance-groups list</code>
+                            </p>
+
+                            <p>list instances in the instance group
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/list-instances" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud compute instance-groups list-instances ">gcloud compute instance-groups list-instances <span>NAME</span></code>
+                            </p>  
+                            
+                        </div>
+                    </section>
+                
+                <!-- Container -->
+                    <section id="cloudcontainer" class="two">
+                        <div class="container">
+                            <header>
+                                <h2>Container</h2>
+                            </header>
+
+                            <p>fetch credential
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/container/clusters/get-credentials" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud container clusters get-credentials ">gcloud container clusters get-credentials  <span>CLUSTER_NAME</span></code>
+                            </p>
+                           
+                            <p>list container clusters
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/container/clusters/list" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud container clusters list">gcloud container clusters list</code>
+                            </p>
+
+                            <p>describe container clusters
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/container/clusters/describe" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud container clusters describe ">gcloud container clusters describe <span>CLUSTER_NAME</span></code>
+                            </p>
+
+                            <p>list GKE images
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/container/images/list" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud container images list">gcloud container images list</code>
+                            </p>
+
+                            <p>list node pools for container cluster
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/container/node-pools/list" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud container node-pools list">gcloud container node-pools list</code>
+                            </p>
+
+                       </div>
+                    </section>
+
+                <!-- Kubectl -->
+                    <section id="kubectl" class="two">
+                        <div class="container">
+                            <header>
+                                <h2>Kubectl</h2>
+                            </header>
+
+                            <p>list services
+                            <a href="https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#get" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="kubectl get services">kubectl get services</code>
+                            </p>
+
+
+                            <p>list deployments
+                            <a href="https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#get" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="kubectl get deployments">kubectl get deployments</code>
+                            </p>
+
+                            <p>list replicasets
+                            <a href="https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#get" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="kubectl get replicasets">kubectl get replicasets</code>
+                            </p>
+
+                            <p>list hpa
+                            <a href="https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#get" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="kubectl get hpa">kubectl get hpa</code>
+                            </p>
+
+                            <p>list pods
+                            <a href="https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#get" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="kubectl get pods">kubectl get pods</code>
+                            </p>
+
+                            <p>list nodes
+                            <a href="https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#get" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="kubectl get nodes">kubectl get nodes</code>
+                            </p>
+
+                        </div>
+                    </section>
+
+                <!-- App Engine -->
+                    <section id="appengine" class="two">
+                        <div class="container">
+                            <header>
+                                <h2>App Engine</h2>
+                            </header>
+
+                            <p>deploy the code to App Engine
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/app/deploy" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud app deploy">gcloud app deploy</code>
+                            </p>
+
+                            <p>open the app in web browser
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/app/browse" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud app browse">gcloud app browse</code>
+                            </p>
+
+                            <p>list versions of App Engine
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/app/versions/list" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud app versions list">gcloud app versions list</code>
+                            </p>
+ 
+                            <p>list services of App Engine
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/app/services/list" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud app services list">gcloud app services list</code>
+                            </p>
+ 
+                            <p>list instances of App Engine
+                            <a href="https://cloud.google.com/sdk/gcloud/reference/app/instances/list" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text="gcloud app instances list">gcloud app instances list</code>
+                            </p>
+
+                            <p>
+                            <a href="" target="_blank">
+                            <i  class="icon solid fa-external-link-square-alt"></i></a><br>
+                            <code class="copy-value" data-clipboard-text=""></code>
+                            </p>
+
+
+                        </div>
+                    </section>
+
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
