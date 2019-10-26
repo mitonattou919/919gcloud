@@ -1,0 +1,29 @@
+runtime: go111
+
+handlers:
+- url: /
+  static_files: index.html
+  upload: index.html
+  secure: always
+- url: /assets
+  static_dir: assets
+  secure: always
+- url: /images
+  static_dir: images
+  secure: always
+- url: /.*
+  script: auto
+  secure: always
+
+instance_class: F1
+
+automatic_scaling:
+  max_instances: 2
+  min_idle_instances: automatic
+  max_idle_instances: 1
+  min_pending_latency: 5000ms
+  max_pending_latency: automatic
+  max_concurrent_requests: 80
+  target_cpu_utilization: 0.95
+  target_throughput_utilization: 0.95
+  
